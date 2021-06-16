@@ -2,11 +2,12 @@ kind: Service
 apiVersion: v1
 metadata:
   name: nodeapp-service
-  namespace: <your namespace>
+  namespace: jkidd
 spec:
   selector:
     app: nodeapp
   ports:
   - protocol: TCP
     port: 80   
-  type: LodeBalancer
+    targetPort: 3000
+  type: LoadBalancer

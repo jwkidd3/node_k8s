@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp-deployment
-  namespace: <your namespace>
+  namespace: jkidd
   labels:
     app: nodeapp
 spec:
@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: mynode
-        image: <node image name>
+        image: kiddcorpacr.azurecr.io/jkidd3nodeapp:v1 
